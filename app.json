@@ -1,0 +1,77 @@
+{
+  "expo": {
+    "name": "سكينة",
+    "slug": "sakinah",
+    "scheme": "sakinah",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FBF8F1"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.sakinah.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "نستخدم موقعك لحساب مواقيت الصلاة واتجاه القبلة، ويبقى الموقع محفوظاً على جهازك."
+      }
+    },
+    "android": {
+      "package": "app.sakinah.reader",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "backgroundColor": "#3E6B52",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "POST_NOTIFICATIONS",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true,
+          "forcesRTL": true
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "نستخدم موقعك لحساب مواقيت الصلاة واتجاه القبلة، ويبقى الموقع محفوظاً على جهازك."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#3E6B52"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FBF8F1",
+          "dark": {
+            "backgroundColor": "#16201C"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

@@ -1,0 +1,800 @@
+[
+  {
+    "id": 1,
+    "nameAr": "الفاتحة",
+    "ayahCount": 7,
+    "bismillahPre": false,
+    "startPage": 1
+  },
+  {
+    "id": 2,
+    "nameAr": "البقرة",
+    "ayahCount": 286,
+    "bismillahPre": true,
+    "startPage": 2
+  },
+  {
+    "id": 3,
+    "nameAr": "آل عمران",
+    "ayahCount": 200,
+    "bismillahPre": true,
+    "startPage": 50
+  },
+  {
+    "id": 4,
+    "nameAr": "النساء",
+    "ayahCount": 176,
+    "bismillahPre": true,
+    "startPage": 77
+  },
+  {
+    "id": 5,
+    "nameAr": "المائدة",
+    "ayahCount": 120,
+    "bismillahPre": true,
+    "startPage": 106
+  },
+  {
+    "id": 6,
+    "nameAr": "الأنعام",
+    "ayahCount": 165,
+    "bismillahPre": true,
+    "startPage": 128
+  },
+  {
+    "id": 7,
+    "nameAr": "الأعراف",
+    "ayahCount": 206,
+    "bismillahPre": true,
+    "startPage": 151
+  },
+  {
+    "id": 8,
+    "nameAr": "الأنفال",
+    "ayahCount": 75,
+    "bismillahPre": true,
+    "startPage": 177
+  },
+  {
+    "id": 9,
+    "nameAr": "التوبة",
+    "ayahCount": 129,
+    "bismillahPre": false,
+    "startPage": 187
+  },
+  {
+    "id": 10,
+    "nameAr": "يونس",
+    "ayahCount": 109,
+    "bismillahPre": true,
+    "startPage": 208
+  },
+  {
+    "id": 11,
+    "nameAr": "هود",
+    "ayahCount": 123,
+    "bismillahPre": true,
+    "startPage": 221
+  },
+  {
+    "id": 12,
+    "nameAr": "يوسف",
+    "ayahCount": 111,
+    "bismillahPre": true,
+    "startPage": 235
+  },
+  {
+    "id": 13,
+    "nameAr": "الرعد",
+    "ayahCount": 43,
+    "bismillahPre": true,
+    "startPage": 249
+  },
+  {
+    "id": 14,
+    "nameAr": "ابراهيم",
+    "ayahCount": 52,
+    "bismillahPre": true,
+    "startPage": 255
+  },
+  {
+    "id": 15,
+    "nameAr": "الحجر",
+    "ayahCount": 99,
+    "bismillahPre": true,
+    "startPage": 262
+  },
+  {
+    "id": 16,
+    "nameAr": "النحل",
+    "ayahCount": 128,
+    "bismillahPre": true,
+    "startPage": 267
+  },
+  {
+    "id": 17,
+    "nameAr": "الإسراء",
+    "ayahCount": 111,
+    "bismillahPre": true,
+    "startPage": 282
+  },
+  {
+    "id": 18,
+    "nameAr": "الكهف",
+    "ayahCount": 110,
+    "bismillahPre": true,
+    "startPage": 293
+  },
+  {
+    "id": 19,
+    "nameAr": "مريم",
+    "ayahCount": 98,
+    "bismillahPre": true,
+    "startPage": 305
+  },
+  {
+    "id": 20,
+    "nameAr": "طه",
+    "ayahCount": 135,
+    "bismillahPre": true,
+    "startPage": 312
+  },
+  {
+    "id": 21,
+    "nameAr": "الأنبياء",
+    "ayahCount": 112,
+    "bismillahPre": true,
+    "startPage": 322
+  },
+  {
+    "id": 22,
+    "nameAr": "الحج",
+    "ayahCount": 78,
+    "bismillahPre": true,
+    "startPage": 332
+  },
+  {
+    "id": 23,
+    "nameAr": "المؤمنون",
+    "ayahCount": 118,
+    "bismillahPre": true,
+    "startPage": 342
+  },
+  {
+    "id": 24,
+    "nameAr": "النور",
+    "ayahCount": 64,
+    "bismillahPre": true,
+    "startPage": 350
+  },
+  {
+    "id": 25,
+    "nameAr": "الفرقان",
+    "ayahCount": 77,
+    "bismillahPre": true,
+    "startPage": 359
+  },
+  {
+    "id": 26,
+    "nameAr": "الشعراء",
+    "ayahCount": 227,
+    "bismillahPre": true,
+    "startPage": 367
+  },
+  {
+    "id": 27,
+    "nameAr": "النمل",
+    "ayahCount": 93,
+    "bismillahPre": true,
+    "startPage": 377
+  },
+  {
+    "id": 28,
+    "nameAr": "القصص",
+    "ayahCount": 88,
+    "bismillahPre": true,
+    "startPage": 385
+  },
+  {
+    "id": 29,
+    "nameAr": "العنكبوت",
+    "ayahCount": 69,
+    "bismillahPre": true,
+    "startPage": 396
+  },
+  {
+    "id": 30,
+    "nameAr": "الروم",
+    "ayahCount": 60,
+    "bismillahPre": true,
+    "startPage": 404
+  },
+  {
+    "id": 31,
+    "nameAr": "لقمان",
+    "ayahCount": 34,
+    "bismillahPre": true,
+    "startPage": 411
+  },
+  {
+    "id": 32,
+    "nameAr": "السجدة",
+    "ayahCount": 30,
+    "bismillahPre": true,
+    "startPage": 415
+  },
+  {
+    "id": 33,
+    "nameAr": "الأحزاب",
+    "ayahCount": 73,
+    "bismillahPre": true,
+    "startPage": 418
+  },
+  {
+    "id": 34,
+    "nameAr": "سبإ",
+    "ayahCount": 54,
+    "bismillahPre": true,
+    "startPage": 428
+  },
+  {
+    "id": 35,
+    "nameAr": "فاطر",
+    "ayahCount": 45,
+    "bismillahPre": true,
+    "startPage": 434
+  },
+  {
+    "id": 36,
+    "nameAr": "يس",
+    "ayahCount": 83,
+    "bismillahPre": true,
+    "startPage": 440
+  },
+  {
+    "id": 37,
+    "nameAr": "الصافات",
+    "ayahCount": 182,
+    "bismillahPre": true,
+    "startPage": 446
+  },
+  {
+    "id": 38,
+    "nameAr": "ص",
+    "ayahCount": 88,
+    "bismillahPre": true,
+    "startPage": 453
+  },
+  {
+    "id": 39,
+    "nameAr": "الزمر",
+    "ayahCount": 75,
+    "bismillahPre": true,
+    "startPage": 458
+  },
+  {
+    "id": 40,
+    "nameAr": "غافر",
+    "ayahCount": 85,
+    "bismillahPre": true,
+    "startPage": 467
+  },
+  {
+    "id": 41,
+    "nameAr": "فصلت",
+    "ayahCount": 54,
+    "bismillahPre": true,
+    "startPage": 477
+  },
+  {
+    "id": 42,
+    "nameAr": "الشورى",
+    "ayahCount": 53,
+    "bismillahPre": true,
+    "startPage": 483
+  },
+  {
+    "id": 43,
+    "nameAr": "الزخرف",
+    "ayahCount": 89,
+    "bismillahPre": true,
+    "startPage": 489
+  },
+  {
+    "id": 44,
+    "nameAr": "الدخان",
+    "ayahCount": 59,
+    "bismillahPre": true,
+    "startPage": 496
+  },
+  {
+    "id": 45,
+    "nameAr": "الجاثية",
+    "ayahCount": 37,
+    "bismillahPre": true,
+    "startPage": 499
+  },
+  {
+    "id": 46,
+    "nameAr": "الأحقاف",
+    "ayahCount": 35,
+    "bismillahPre": true,
+    "startPage": 502
+  },
+  {
+    "id": 47,
+    "nameAr": "محمد",
+    "ayahCount": 38,
+    "bismillahPre": true,
+    "startPage": 507
+  },
+  {
+    "id": 48,
+    "nameAr": "الفتح",
+    "ayahCount": 29,
+    "bismillahPre": true,
+    "startPage": 511
+  },
+  {
+    "id": 49,
+    "nameAr": "الحجرات",
+    "ayahCount": 18,
+    "bismillahPre": true,
+    "startPage": 515
+  },
+  {
+    "id": 50,
+    "nameAr": "ق",
+    "ayahCount": 45,
+    "bismillahPre": true,
+    "startPage": 518
+  },
+  {
+    "id": 51,
+    "nameAr": "الذاريات",
+    "ayahCount": 60,
+    "bismillahPre": true,
+    "startPage": 520
+  },
+  {
+    "id": 52,
+    "nameAr": "الطور",
+    "ayahCount": 49,
+    "bismillahPre": true,
+    "startPage": 523
+  },
+  {
+    "id": 53,
+    "nameAr": "النجم",
+    "ayahCount": 62,
+    "bismillahPre": true,
+    "startPage": 526
+  },
+  {
+    "id": 54,
+    "nameAr": "القمر",
+    "ayahCount": 55,
+    "bismillahPre": true,
+    "startPage": 528
+  },
+  {
+    "id": 55,
+    "nameAr": "الرحمن",
+    "ayahCount": 78,
+    "bismillahPre": true,
+    "startPage": 531
+  },
+  {
+    "id": 56,
+    "nameAr": "الواقعة",
+    "ayahCount": 96,
+    "bismillahPre": true,
+    "startPage": 534
+  },
+  {
+    "id": 57,
+    "nameAr": "الحديد",
+    "ayahCount": 29,
+    "bismillahPre": true,
+    "startPage": 537
+  },
+  {
+    "id": 58,
+    "nameAr": "المجادلة",
+    "ayahCount": 22,
+    "bismillahPre": true,
+    "startPage": 542
+  },
+  {
+    "id": 59,
+    "nameAr": "الحشر",
+    "ayahCount": 24,
+    "bismillahPre": true,
+    "startPage": 545
+  },
+  {
+    "id": 60,
+    "nameAr": "الممتحنة",
+    "ayahCount": 13,
+    "bismillahPre": true,
+    "startPage": 549
+  },
+  {
+    "id": 61,
+    "nameAr": "الصف",
+    "ayahCount": 14,
+    "bismillahPre": true,
+    "startPage": 551
+  },
+  {
+    "id": 62,
+    "nameAr": "الجمعة",
+    "ayahCount": 11,
+    "bismillahPre": true,
+    "startPage": 553
+  },
+  {
+    "id": 63,
+    "nameAr": "المنافقون",
+    "ayahCount": 11,
+    "bismillahPre": true,
+    "startPage": 554
+  },
+  {
+    "id": 64,
+    "nameAr": "التغابن",
+    "ayahCount": 18,
+    "bismillahPre": true,
+    "startPage": 556
+  },
+  {
+    "id": 65,
+    "nameAr": "الطلاق",
+    "ayahCount": 12,
+    "bismillahPre": true,
+    "startPage": 558
+  },
+  {
+    "id": 66,
+    "nameAr": "التحريم",
+    "ayahCount": 12,
+    "bismillahPre": true,
+    "startPage": 560
+  },
+  {
+    "id": 67,
+    "nameAr": "الملك",
+    "ayahCount": 30,
+    "bismillahPre": true,
+    "startPage": 562
+  },
+  {
+    "id": 68,
+    "nameAr": "القلم",
+    "ayahCount": 52,
+    "bismillahPre": true,
+    "startPage": 564
+  },
+  {
+    "id": 69,
+    "nameAr": "الحاقة",
+    "ayahCount": 52,
+    "bismillahPre": true,
+    "startPage": 566
+  },
+  {
+    "id": 70,
+    "nameAr": "المعارج",
+    "ayahCount": 44,
+    "bismillahPre": true,
+    "startPage": 568
+  },
+  {
+    "id": 71,
+    "nameAr": "نوح",
+    "ayahCount": 28,
+    "bismillahPre": true,
+    "startPage": 570
+  },
+  {
+    "id": 72,
+    "nameAr": "الجن",
+    "ayahCount": 28,
+    "bismillahPre": true,
+    "startPage": 572
+  },
+  {
+    "id": 73,
+    "nameAr": "المزمل",
+    "ayahCount": 20,
+    "bismillahPre": true,
+    "startPage": 574
+  },
+  {
+    "id": 74,
+    "nameAr": "المدثر",
+    "ayahCount": 56,
+    "bismillahPre": true,
+    "startPage": 575
+  },
+  {
+    "id": 75,
+    "nameAr": "القيامة",
+    "ayahCount": 40,
+    "bismillahPre": true,
+    "startPage": 577
+  },
+  {
+    "id": 76,
+    "nameAr": "الانسان",
+    "ayahCount": 31,
+    "bismillahPre": true,
+    "startPage": 578
+  },
+  {
+    "id": 77,
+    "nameAr": "المرسلات",
+    "ayahCount": 50,
+    "bismillahPre": true,
+    "startPage": 580
+  },
+  {
+    "id": 78,
+    "nameAr": "النبإ",
+    "ayahCount": 40,
+    "bismillahPre": true,
+    "startPage": 582
+  },
+  {
+    "id": 79,
+    "nameAr": "النازعات",
+    "ayahCount": 46,
+    "bismillahPre": true,
+    "startPage": 583
+  },
+  {
+    "id": 80,
+    "nameAr": "عبس",
+    "ayahCount": 42,
+    "bismillahPre": true,
+    "startPage": 585
+  },
+  {
+    "id": 81,
+    "nameAr": "التكوير",
+    "ayahCount": 29,
+    "bismillahPre": true,
+    "startPage": 586
+  },
+  {
+    "id": 82,
+    "nameAr": "الإنفطار",
+    "ayahCount": 19,
+    "bismillahPre": true,
+    "startPage": 587
+  },
+  {
+    "id": 83,
+    "nameAr": "المطففين",
+    "ayahCount": 36,
+    "bismillahPre": true,
+    "startPage": 587
+  },
+  {
+    "id": 84,
+    "nameAr": "الإنشقاق",
+    "ayahCount": 25,
+    "bismillahPre": true,
+    "startPage": 589
+  },
+  {
+    "id": 85,
+    "nameAr": "البروج",
+    "ayahCount": 22,
+    "bismillahPre": true,
+    "startPage": 590
+  },
+  {
+    "id": 86,
+    "nameAr": "الطارق",
+    "ayahCount": 17,
+    "bismillahPre": true,
+    "startPage": 591
+  },
+  {
+    "id": 87,
+    "nameAr": "الأعلى",
+    "ayahCount": 19,
+    "bismillahPre": true,
+    "startPage": 591
+  },
+  {
+    "id": 88,
+    "nameAr": "الغاشية",
+    "ayahCount": 26,
+    "bismillahPre": true,
+    "startPage": 592
+  },
+  {
+    "id": 89,
+    "nameAr": "الفجر",
+    "ayahCount": 30,
+    "bismillahPre": true,
+    "startPage": 593
+  },
+  {
+    "id": 90,
+    "nameAr": "البلد",
+    "ayahCount": 20,
+    "bismillahPre": true,
+    "startPage": 594
+  },
+  {
+    "id": 91,
+    "nameAr": "الشمس",
+    "ayahCount": 15,
+    "bismillahPre": true,
+    "startPage": 595
+  },
+  {
+    "id": 92,
+    "nameAr": "الليل",
+    "ayahCount": 21,
+    "bismillahPre": true,
+    "startPage": 595
+  },
+  {
+    "id": 93,
+    "nameAr": "الضحى",
+    "ayahCount": 11,
+    "bismillahPre": true,
+    "startPage": 596
+  },
+  {
+    "id": 94,
+    "nameAr": "الشرح",
+    "ayahCount": 8,
+    "bismillahPre": true,
+    "startPage": 596
+  },
+  {
+    "id": 95,
+    "nameAr": "التين",
+    "ayahCount": 8,
+    "bismillahPre": true,
+    "startPage": 597
+  },
+  {
+    "id": 96,
+    "nameAr": "العلق",
+    "ayahCount": 19,
+    "bismillahPre": true,
+    "startPage": 597
+  },
+  {
+    "id": 97,
+    "nameAr": "القدر",
+    "ayahCount": 5,
+    "bismillahPre": true,
+    "startPage": 598
+  },
+  {
+    "id": 98,
+    "nameAr": "البينة",
+    "ayahCount": 8,
+    "bismillahPre": true,
+    "startPage": 598
+  },
+  {
+    "id": 99,
+    "nameAr": "الزلزلة",
+    "ayahCount": 8,
+    "bismillahPre": true,
+    "startPage": 599
+  },
+  {
+    "id": 100,
+    "nameAr": "العاديات",
+    "ayahCount": 11,
+    "bismillahPre": true,
+    "startPage": 599
+  },
+  {
+    "id": 101,
+    "nameAr": "القارعة",
+    "ayahCount": 11,
+    "bismillahPre": true,
+    "startPage": 600
+  },
+  {
+    "id": 102,
+    "nameAr": "التكاثر",
+    "ayahCount": 8,
+    "bismillahPre": true,
+    "startPage": 600
+  },
+  {
+    "id": 103,
+    "nameAr": "العصر",
+    "ayahCount": 3,
+    "bismillahPre": true,
+    "startPage": 601
+  },
+  {
+    "id": 104,
+    "nameAr": "الهمزة",
+    "ayahCount": 9,
+    "bismillahPre": true,
+    "startPage": 601
+  },
+  {
+    "id": 105,
+    "nameAr": "الفيل",
+    "ayahCount": 5,
+    "bismillahPre": true,
+    "startPage": 601
+  },
+  {
+    "id": 106,
+    "nameAr": "قريش",
+    "ayahCount": 4,
+    "bismillahPre": true,
+    "startPage": 602
+  },
+  {
+    "id": 107,
+    "nameAr": "الماعون",
+    "ayahCount": 7,
+    "bismillahPre": true,
+    "startPage": 602
+  },
+  {
+    "id": 108,
+    "nameAr": "الكوثر",
+    "ayahCount": 3,
+    "bismillahPre": true,
+    "startPage": 602
+  },
+  {
+    "id": 109,
+    "nameAr": "الكافرون",
+    "ayahCount": 6,
+    "bismillahPre": true,
+    "startPage": 603
+  },
+  {
+    "id": 110,
+    "nameAr": "النصر",
+    "ayahCount": 3,
+    "bismillahPre": true,
+    "startPage": 603
+  },
+  {
+    "id": 111,
+    "nameAr": "المسد",
+    "ayahCount": 5,
+    "bismillahPre": true,
+    "startPage": 603
+  },
+  {
+    "id": 112,
+    "nameAr": "الإخلاص",
+    "ayahCount": 4,
+    "bismillahPre": true,
+    "startPage": 604
+  },
+  {
+    "id": 113,
+    "nameAr": "الفلق",
+    "ayahCount": 5,
+    "bismillahPre": true,
+    "startPage": 604
+  },
+  {
+    "id": 114,
+    "nameAr": "الناس",
+    "ayahCount": 6,
+    "bismillahPre": true,
+    "startPage": 604
+  }
+]

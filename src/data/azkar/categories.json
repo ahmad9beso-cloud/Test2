@@ -1,0 +1,15 @@
+[
+  { "id": "morning", "title": "أذكار الصباح", "visible": true },
+  { "id": "evening", "title": "أذكار المساء", "visible": true },
+  { "id": "sleep", "title": "أذكار النوم", "visible": true },
+  { "id": "wakeup", "title": "أذكار الاستيقاظ", "visible": true },
+  { "id": "after-prayer", "title": "أذكار بعد الصلاة", "visible": true },
+  { "id": "hisn", "title": "حصن المسلم", "visible": true },
+  { "id": "travel", "title": "أذكار السفر", "visible": false },
+  { "id": "home-enter", "title": "أذكار دخول المنزل", "visible": false },
+  { "id": "home-exit", "title": "أذكار الخروج", "visible": false },
+  { "id": "food", "title": "أذكار الطعام", "visible": false },
+  { "id": "mosque", "title": "أذكار المسجد", "visible": false },
+  { "id": "wudu", "title": "أذكار الوضوء", "visible": false },
+  { "id": "misc", "title": "أذكار متنوعة", "visible": false }
+]

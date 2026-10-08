@@ -1,0 +1,83 @@
+name: Android APK (no Android Studio, no Expo account)
+
+# Builds an installable APK entirely on the GitHub runner:
+#   expo prebuild  →  Gradle assembleRelease
+# Run it from the Actions tab ("Run workflow") or by pushing a tag like v1.0.0.
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: android-actions/setup-android@v3
+
+      - run: npm ci
+
+      - name: Generate the native Android project
+        run: npx expo prebuild --platform android --no-install
+
+      # Build per-ABI APKs instead of one fat universal APK (~4x smaller install).
+      # Modern phones use the arm64-v8a APK (~30-40MB instead of ~110MB).
+      - name: Enable per-ABI APK splits
+        run: |
+          FILE=android/app/build.gradle
+          sed -i 's/def enableSeparateBuildPerCPUArchitecture = false/def enableSeparateBuildPerCPUArchitecture = true/' "$FILE"
+          grep -q 'enableSeparateBuildPerCPUArchitecture = true' "$FILE" || {
+            echo 'WARN: split flag not found in build.gradle'
+            exit 1
+          }
+
+      - name: Optional release signing (set the 4 secrets to sign with your own key)
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "$KEYSTORE_BASE64" | base64 -d > android/app/release.keystore
+            {
+              echo "SAKINAH_STORE_FILE=release.keystore"
+              echo "SAKINAH_STORE_PASSWORD=${{ secrets.ANDROID_KEYSTORE_PASSWORD }}"
+              echo "SAKINAH_KEY_ALIAS=${{ secrets.ANDROID_KEY_ALIAS }}"
+              echo "SAKINAH_KEY_PASSWORD=${{ secrets.ANDROID_KEY_PASSWORD }}"
+            } >> android/gradle.properties
+            cat >> android/app/build.gradle <<'EOF'
+
+          android.signingConfigs {
+              release {
+                  storeFile file(SAKINAH_STORE_FILE)
+                  storePassword SAKINAH_STORE_PASSWORD
+                  keyAlias SAKINAH_KEY_ALIAS
+                  keyPassword SAKINAH_KEY_PASSWORD
+              }
+          }
+          android.buildTypes.release.signingConfig = android.signingConfigs.release
+          EOF
+            echo "Signing with the provided keystore."
+          else
+            echo "No keystore secrets: the APK will be signed with the debug key (fine for testing, not for the Play Store)."
+          fi
+
+      - name: Build release APK
+        working-directory: android
+        run: ./gradlew assembleRelease --no-daemon
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sakinah-apk
+          path: android/app/build/outputs/apk/release/*.apk

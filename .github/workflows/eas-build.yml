@@ -1,0 +1,32 @@
+name: EAS Build (APK / AAB)
+
+# Cloud build by Expo (EAS). One-time setup:
+#   1. npx eas-cli login && npx eas-cli init     (creates the project id in app.json)
+#   2. Create an access token at expo.dev → Settings → Access tokens
+#   3. Add it to the repo as the secret EXPO_TOKEN
+# Then run this workflow manually and pick the profile.
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'preview = APK for testing · production = AAB for Google Play'
+        type: choice
+        options: [preview, production]
+        default: preview
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+      - run: npm ci
+      - run: eas build --platform android --profile ${{ inputs.profile }} --non-interactive
