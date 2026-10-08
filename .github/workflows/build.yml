@@ -31,6 +31,17 @@ jobs:
       - name: Generate the native Android project
         run: npx expo prebuild --platform android --no-install
 
+      - name: Fix missing splashscreen_logo resource
+        run: |
+          mkdir -p android/app/src/main/res/drawable
+          if [ ! -f android/app/src/main/res/drawable/splashscreen_logo.png ]; then
+            SRC_IMG=$(find assets -type f \( -name "*.png" -o -name "*.jpg" \) | head -n 1)
+            if [ -n "$SRC_IMG" ]; then
+              cp "$SRC_IMG" android/app/src/main/res/drawable/splashscreen_logo.png
+              echo "Successfully generated splashscreen_logo.png from $SRC_IMG"
+            fi
+          fi
+
       - name: Optional release signing (set the 4 secrets to sign with your own key)
         env:
           KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
