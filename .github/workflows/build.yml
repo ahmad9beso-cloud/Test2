@@ -31,15 +31,6 @@ jobs:
       - name: Generate the native Android project
         run: npx expo prebuild --platform android --no-install
 
-      - name: Enable per-ABI APK splits
-        run: |
-          FILE=android/app/build.gradle
-          sed -i 's/def enableSeparateBuildPerCPUArchitecture = false/def enableSeparateBuildPerCPUArchitecture = true/' "$FILE"
-          grep -q 'enableSeparateBuildPerCPUArchitecture = true' "$FILE" || {
-            echo 'WARN: split flag not found in build.gradle'
-            exit 1
-          }
-
       - name: Optional release signing (set the 4 secrets to sign with your own key)
         env:
           KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
